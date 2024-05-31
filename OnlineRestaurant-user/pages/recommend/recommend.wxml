@@ -1,0 +1,24 @@
+<!-- recommend.wxml -->
+<view class="container">
+  <view class="preference-slider">
+    <text>甜度（1-5）：</text>
+    <slider min="1" max="5" step="1" show-value value="{{sweetness}}" bindchange="sliderChange" data-type="sweetness"/>
+  </view>
+  <view class="preference-slider">
+    <text>咸度（1-5）：</text>
+    <slider min="1" max="5" step="1" show-value value="{{saltiness}}" bindchange="sliderChange" data-type="saltiness"/>
+  </view>
+  <view class="preference-slider">
+    <text>辣度（0-4）：</text>
+    <slider min="0" max="4" step="1" show-value value="{{spiciness}}" bindchange="sliderChange" data-type="spiciness"/>
+  </view>
+  <view class="diet-restriction">
+    <text>忌口：</text>
+    <input type="text" placeholder="请输入忌口内容" bindchange="inputChange" value="{{avoidances}}"/>
+  </view>
+  <!-- 提交按钮 -->
+  <button class="submit-btn" bindtap="handleSubmit">提交</button>
+  
+  <!-- 接收文本内容并输出显示的文本框 -->
+  <textarea class="output-textarea" disabled="true">{{outputText}}</textarea>
+</view>
