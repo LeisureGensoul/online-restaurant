@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="order-domain" />
+        <module name="order-test" />
+        <module name="order-commons" />
+        <module name="order-repository" />
+        <module name="order-start" />
+        <module name="order-service" />
+        <module name="order-type" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
